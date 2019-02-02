@@ -1,7 +1,50 @@
-<title>Damn thats cool!</title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>-</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="icon" href="media/icon.png">
 
-<body style="background-color:#000000;">
-<center><font color="red", face="verdana">yeah</font></center>
-<center><img src="aesthetic.gif" alt="aesthetic" height="200" width="200"</center>
-
-</body>
+    <body>
+        <div id="player">
+                <audio id="song" loop autoplay>
+                     <source src="media/song.mp3" type="audio/mpeg" />
+                </audio>
+        </div>
+        <div class=jsparticles>
+                <div id="particles-js">
+        <div class="container">
+            <span class="Text1">Welcome</span>
+        <div class="Middle">
+            <a class="Button" href="https://steamcommunity.com/id/steamurlalreadyinuse/" id="no-link">
+                <i class="fab fa-steam"></i>
+            </a>
+            <a class="Button" href="https://twitter.com/ramthesecond">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        </div>
+        </div>  
+        <script language="JavaScript">
+                var space = "";
+                var speed = "700";
+                var pos = 0;
+                var msg = "⠀⠀:)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:/⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:(⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:/⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:/⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:(⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:/";
+                function Scroll()
+                {
+                document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+                pos++;
+                if (pos > msg.length) pos = 0;
+                window.setTimeout("Scroll()", speed);
+                }
+                Scroll();
+        </script> 
+        <script type="text/JavaScript" src="particles/particles.js"></script>
+        <script type="text/JavaScript" src="particles/particles.min.js"></script>
+        <script type="text/JavaScript" src="particles/app.js"></script>
+        
+    </body>
+</html>

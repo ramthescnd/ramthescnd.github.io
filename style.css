@@ -1,0 +1,151 @@
+html 
+{ 
+/*Background*/
+
+    background: url(media/background_v2.png) no-repeat center center fixed; 
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    
+
+/*State*/
+    min-height: 100%;
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Font over Picture*/
+
+.container
+{ 
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+
+}
+
+/*First Text*/
+.container span
+{ 
+    text-transform: uppercase;
+    display: block;
+}
+
+.Text1
+{
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 50px;
+
+/*First Fade*/
+    animation: Fade 15s;
+}
+
+@keyframes Fade
+{
+  from
+  {
+   opacity: 0;
+  }
+  to
+  {
+   opacity: 1;
+  }
+}
+
+/*Second Fade*/
+@keyframes ButtFade
+{
+  from
+  {
+   opacity: 0;
+  }
+  to
+  {
+   opacity: 1;
+  }
+}
+
+/*Buttons*/
+.Middle
+{
+  position: absolute;
+  top: 150%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.Button
+{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: none;
+  margin: 30px;
+  border-radius: none;
+  box-shadow: none;
+  color: #ffff;
+  overflow: hidden;
+  position: relative;
+  animation: ButtFade 20s;
+}
+
+.Button i
+{
+  line-height: 90px;
+  font-size: 70px;
+  transition: 0.2s linear;
+}
+
+.Button:Hover i
+{
+  transform: scale(1.3); 
+  color: none;
+}
+
+.Button::before
+{
+  content: "";
+  position: relative;
+  width: 120%;
+  height: 120%;
+  background: none;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.Button:Hover::before
+{
+  animation: Anim 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+/*Button Animation*/
+
+@keyframes Anim
+{
+  0%
+  {
+    left: -110%;
+    top: 90%; 
+  }50%
+  {
+    left: 10%;
+    top: -30%;
+  }100%
+  { 
+    top: -10%;
+    left: -10%;
+  }
+}

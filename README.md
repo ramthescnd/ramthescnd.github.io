@@ -7,3 +7,4 @@ I did not create the song, nor do I have the rights for it. All the rights belon
 Song Name: Eternal Youth by RUDE
 
 Libs used: particles.js - https://vincentgarreau.com/particles.js/
+            , jquery       - http://api.jquery.com/

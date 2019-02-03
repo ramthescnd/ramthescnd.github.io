@@ -78,7 +78,7 @@ html
 .Middle
 {
   position: absolute;
-  top: 150%;
+  top: 110%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -90,7 +90,7 @@ html
   width: 90px;
   height: 90px;
   background: none;
-  margin: 30px;
+  margin: 20px;
   border-radius: none;
   box-shadow: none;
   color: #ffff;

@@ -1,18 +1,18 @@
-html 
-{ 
+html
+{
 /*Background*/
 
-    background: url(media/background_v2.png) no-repeat center center fixed; 
-    
+    background: url(media/background_v2.png) no-repeat center center fixed;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    
+
 
 /*State*/
     min-height: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -20,7 +20,7 @@ html
 /*Font over Picture*/
 
 .container
-{ 
+{
    text-align: center;
    position: absolute;
    top: 50%;
@@ -32,7 +32,7 @@ html
 
 /*First Text*/
 .container span
-{ 
+{
     text-transform: uppercase;
     display: block;
 }
@@ -108,7 +108,7 @@ html
 
 .Button:Hover i
 {
-  transform: scale(1.3); 
+  transform: scale(1.3);
   color: none;
 }
 
@@ -138,13 +138,13 @@ html
   0%
   {
     left: -110%;
-    top: 90%; 
+    top: 90%;
   }50%
   {
     left: 10%;
     top: -30%;
   }100%
-  { 
+  {
     top: -10%;
     left: -10%;
   }
